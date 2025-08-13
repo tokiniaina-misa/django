@@ -1,0 +1,49 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*$py.class
+
+# ---- Django ----
+*.log
+db.sqlite3
+media/
+staticfiles/
+.env
+.env.local
+
+# ---- Pytest ----
+.cache/
+.coverage
+htmlcov/
+
+# ---- Docker ----
+*.pid
+*.seed
+*.pid.lock
+
+# Docker volumes / data
+data/
+volumes/
+
+# ---- VSCode / IDE ----
+.vscode/
+.idea/
+*.swp
+*~
+.project
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+
+# ---- Virtual env ----
+venv/
+env/
+ENV/
+.venv/
