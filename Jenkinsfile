@@ -31,7 +31,7 @@ pipeline {
             echo 'Tests échoués — Tout a été nettoyé.'
         }
         success {
-            echo 'Tests réussis '
+            echo 'Tests réussis'
         }
     }
 }
