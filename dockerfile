@@ -14,5 +14,4 @@ COPY . /app/
 # Exposer le port Django
 EXPOSE 5000
 
-# Par défaut, lancer les tests (modifiable dans Jenkins)
-CMD ["sh", "-c", "python manage.py migrate && python manage.py test"]
+CMD ["sh", "-c", "python manage.py migrate && python manage.py test && python manage.py runserver 0.0.0.0:5000"]
