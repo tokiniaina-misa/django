@@ -13,6 +13,7 @@ pipeline {
                 script {
                     try {
                         sh 'docker run -p 5000:5000 -d --name djangochat_container djangochat:latest'
+                        sh 'docker log djangochat_container'
                     } catch (err) {
                         error("Tests failed ")
                     }
