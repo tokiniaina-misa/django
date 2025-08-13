@@ -15,9 +15,6 @@ pipeline {
                         // Lancer le container en mode détaché
                         sh 'docker run -d -p 5000:5000 --name djangochat_container djangochat:latest'
                         
-                        // Attendre un peu que le container démarre
-                        sleep 7
-                        
                         // Afficher les logs pour vérification
                         sh 'docker logs djangochat_container'
                         
